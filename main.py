@@ -1,26 +1,10 @@
-# import requests
-# from bs4 import BeautifulSoup
-#
-# headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-#          "Accept-Language": "en-US,en;q=0.9",
-#          "sec-ch-ua": "'Chromium';v='122', 'Not(A:Brand';v='24', 'Brave';v='122'",
-#          "sec-ch-ua-platform": '"Windows"'}
-# product_url = "https://www.amazon.in/Robotic-Vacuum-Mop-Professional-Navigation-Assistant/dp/B0B52219KP/ref=sr_1_4?sr=8-4"
-# response = requests.get(url=product_url, headers=headers)
-# webpage = response.text
-# print(webpage)
-#
-#
-# soup = BeautifulSoup(webpage, "html.parser")
-# price = soup.find(name= "span", class_="a-price-whole")
-# print(price.getText())
 
 import requests
 from bs4 import BeautifulSoup
 import smtplib
 
-yahoo_password = "lenwjwqcigtgiyst"
-username = "katyayani.kumari03@gmail.com"
+yahoo_password = "your password" #generate an app password from the email provider after turning on 2FA or use regular password if 2FA not used
+username = "your email"
 
 amz_headers = {
     'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
